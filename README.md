@@ -1,6 +1,6 @@
 # RSVMMAT
 
-R program that performs retrospective set-based varying coefficient mixed model association tests for longitudinal binary traits. 
+R package that performs retrospective set-based varying coefficient mixed model association tests for longitudinal binary traits. 
 
 
 ## Installation Instructions:

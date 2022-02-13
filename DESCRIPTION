@@ -1,0 +1,22 @@
+Package: RSVMMAT
+Title: Retrospective Set-Based Varying Coefficient Mixed Model Association Tests
+Version: 0.0.1.0
+Authors@R: 
+    person(given = "Gang", family = "Xu", role = c("aut", "cre"), email = "xug3@unlv.nevada.edu")
+Description: We propose a set-based retrospective varying coefficient mixed model association test, RSVMMAT, to detect genes that affects the developmental patterns of a trait.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
+Depends: R (>= 2.12.1)
+Suggests: 
+    rmarkdown,
+    knitr
+Imports: 
+    expm,
+    stats,
+    mvtnorm,
+    MASS,
+    utils
+VignetteBuilder: knitr

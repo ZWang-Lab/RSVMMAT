@@ -40,6 +40,9 @@ rsvmmat_test <-function(rsvmmat.est, G, impute.method='fixed', GRM = NULL)
   center.G = var.G
   SNP.list<-colnames(G)
   MAF<-colMeans(as.matrix(G[,colMeans(var.G^2)!=0]), na.rm=T)/2;
+  minormaf=which(MAF>0.5)
+  if(length(minormaf)>0) G[,minormaf]=2-G[,minormaf]
+  MAF<-colMeans(as.matrix(G[,colMeans(var.G^2)!=0]), na.rm=T)/2;
   G<-as.matrix(G[,colMeans(var.G^2)!=0]); center.G = center.G[,colMeans(var.G^2)!=0]
   
   SNP.name<-SNP.list[colMeans(center.G^2)!=0]
